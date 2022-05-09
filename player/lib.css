@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+.stories-container {
+  margin: 0 auto;
+  max-width: 560px;
+  font-family: 'Raleway', sans-serif;
+  user-select: none;
+}
+
+.timeline {
+  margin: 5px 0;
+}
+
+.timeline-item {
+width: 100%;
+height: 3px;
+border-radius: 2px;
+background-color: #757575;
+}
+
+.timeline-item + .timeline-item {
+  margin-left: 10px;
+}
+
+.timeline-active > .timeline-status, .timeline-active ~ .timeline-item > .timeline-status {
+  width: 0;
+}
+
+.timeline-status {
+  height: inherit;
+  width: inherit;
+  background-color: #ffffff;
+}
+
+.timeline-active  {
+  display: block;
+}
+
+.player-content-wrapper{
+  position: relative;
+}
+
+.player-next {
+  top: 0;
+  right: 0;
+}
+
+.player-prev {
+ left: 0;
+ top: 0;
+}
+
+.player-content-switcher {
+  width: 30%;
+  height: 100%;
+  z-index: 9999;
+  position: absolute;
+}
+
+.player-item {
+  position: relative;
+  display: none;
+}
+
+.player-item-overlay {
+  position: absolute;
+  user-select: none;
+}
+ 
+.player-img {
+object-fit: cover;
+width: 100%;
+user-select: none;
+}
+
+.img-active {
+  display: block;
+}
+
+.watercolor {
+  display: flex;
+  align-items: center;
+  min-height: 2em;
+  color: #fff;
+
+  text-align: center;
+  text-shadow: 1px 1px #000;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+
+  background-image: url('../img/pngegg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* transform: rotate(90deg);
+  animation: scale 5s infinite ease-in-out; */
+}
+
+.question {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  background-color: #8E84B8;
+  border-radius: 20px;
+  padding: 20px;
+  min-width: 200px;
+
+}
+.question-answers {
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.question-answers > .btn + .btn {
+  margin-left: 10px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  font-family: 'Raleway', sans-serif;
+  border: none;
+  background-color: rgba(226, 219, 219, 0.947);
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* @keyframes scale {
+  50% {
+    transform: scale(2);
+  }
+} */
